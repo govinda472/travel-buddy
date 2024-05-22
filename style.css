@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: url('https://example.com/airplane-icon.png') no-repeat center center; /* Replace with your airplane icon URL */
+    background-size: contain;
+    animation: fly 5s linear infinite;
+}
+
+@keyframes fly {
+    0% { transform: translate(-50%, -50%) translateX(-100vw); }
+    100% { transform: translate(-50%, -50%) translateX(100vw); }
+}
+
+header, footer, main {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Remaining CSS */
